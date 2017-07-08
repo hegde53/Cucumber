@@ -45,11 +45,11 @@ public class Test_Steps {
 
 	@Given("^User Enters Valid User Id And Password$")
 	public void user_Enters_Valid_User_Id_And_Password() throws Throwable {
-		driver.findElement(By.id("Email")).sendKeys("cucumberdemo53");
+		driver.findElement(By.id("Email")).sendKeys("cucumberdemo");
 		driver.findElement(By.id("next")).click();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Passwd")));
-		driver.findElement(By.name("Passwd")).sendKeys("cucumberdemo53password");	
+		driver.findElement(By.name("Passwd")).sendKeys("cucumberdemopassword");	
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 	}
